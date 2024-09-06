@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="@string/iniciar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Usuario"
+            android:layout_marginRight="30dp"/>
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edt_usuario"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="Ingrese su usuario"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Contraseña"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/edt_contraseña"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="Ingrese su contraseña"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_iniciar"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Iniciar sesion :)"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
